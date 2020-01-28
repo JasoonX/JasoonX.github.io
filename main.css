@@ -1,0 +1,265 @@
+body {
+  background: black;
+  font-family: "Roboto Condensed", sans-serif;
+  color: white;
+}
+* {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: black;
+  z-index: 100;
+}
+.header-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.logo {
+  display: flex;
+  flex-basis: 15%;
+}
+
+li {
+  list-style-type: none;
+}
+ul {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0px;
+}
+
+.nav-element {
+  font-size: 20px;
+  letter-spacing: 0.14em;
+  line-height: 25px;
+  padding-top: 50px;
+}
+.nav-link::after {
+  content: "";
+  display: block;
+  margin-top: 10px;
+  width: 100%;
+  background: #6f77ef;
+  height: 3px;
+}
+
+.logo-pic {
+  height: 128px;
+  width: 128px;
+  margin: auto;
+}
+
+.welcome {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.welcome-h1 {
+  font-size: 100px;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  margin: 0;
+}
+.welcome-h3 {
+  font-size: 40px;
+  font-weight: 300;
+  letter-spacing: 0.12em;
+  margin-top: 20px;
+}
+.h5 {
+  position: absolute;
+  bottom: 100px;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 0.12em;
+}
+.h5::after {
+  position: relative;
+  top: 50px;
+  left: 50%;
+  content: "";
+  display: block;
+  height: 30px;
+  width: 3px;
+  background-color: #6f77ef;
+}
+.h2 {
+  letter-spacing: 0.14em;
+  font-weight: normal;
+  font-size: 30px;
+}
+.aboutus {
+  display: flex;
+  position: relative;
+  min-height: 75vh;
+  flex-direction: column;
+  align-items: center;
+}
+.aboutus-items {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-top: 50px;
+}
+.aboutus-item {
+  flex-basis: 25%;
+}
+.aboutus-item h2 {
+  font-size: 25px;
+  letter-spacing: 0.14em;
+  font-weight: normal;
+  text-align: center;
+}
+.aboutus-item p {
+  margin: 20px 0px;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0.14em;
+}
+.technology {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  min-height: 90vh;
+  padding-top: 50px;
+}
+.technology-desc {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-basis: 23%;
+}
+.technology-desc p {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: normal;
+  margin-top: 20px;
+
+  letter-spacing: 0.14em;
+}
+.roadmap {
+  position: relative;
+  min-height: 80vh;
+}
+.roadmap-bg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.roadmap-bg img {
+  width: 100%;
+}
+
+.roadmap-items {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 100px;
+  height: 100%;
+}
+.roadmap-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 300px;
+  background: black;
+  z-index: 20;
+  flex-basis: 300px;
+  border-radius: 5px;
+  box-shadow: 10px 15px 20px 0px rgba(111, 119, 239, 0.5);
+}
+.roadmap-item h2 {
+  font-size: 25px;
+  letter-spacing: 0.14em;
+  font-weight: normal;
+  text-align: center;
+}
+.roadmap-item p {
+  font-size: 15px;
+  letter-spacing: 0.14em;
+  line-height: 20px;
+  padding: 20px;
+}
+.roadmap .h5 {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.contacts {
+  display: flex;
+  flex-direction: column;
+  text-emphasis: center;
+  align-items: center;
+}
+
+.contacts p {
+  font-size: 20px;
+  letter-spacing: 0.16em;
+  line-height: 25px;
+  padding: 20px;
+}
+.main-flex {
+  display: flex;
+  margin-top: 30px;
+  align-items: center;
+}
+.main-flex img {
+  height: 40px;
+}
+.contacts-items {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 100px;
+}
+.item-name {
+  font-size: 20px;
+  letter-spacing: 0.12em;
+  font-weight: normal;
+}
+.item-position {
+  font-family: "Roboto", sans-serif;
+
+  font-weight: lighter;
+  font-size: 15px;
+  line-height: 15px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  letter-spacing: 0.12em;
+}
+
+.item-phone {
+  font-size: 17.5px;
+  font-weight: 300;
+}
+
+.item-phoneCont {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  right: 40px;
+}
+.item-phoneCont img {
+  margin-right: 15px;
+}
+.footer {
+  text-align: center;
+  margin: 50px 0px 25px;
+}
